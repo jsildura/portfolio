@@ -3,7 +3,7 @@
   <head>
     <title>Sildura - Profile</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -22,12 +22,10 @@
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="script.js?v=1.0"></script>
-
-    <script type="text/javascript">function enforceDesktopView() {
+<script type="text/javascript">function enforceDesktopView() {
   const minWidth = 898; // Minimum width for tablet or desktop view
   const isMobileView = window.innerWidth < minWidth;
 
-  // If in mobile view, display the blocking message
   if (isMobileView) {
     if (!document.getElementById("blockMessage")) {
       const messageDiv = document.createElement("div");
@@ -117,22 +115,17 @@
       document.body.style.overflow = "hidden"; // Prevent scrolling
     }
   } else {
-    // Remove the blocking message if the view is resized to desktop size
     const blockMessage = document.getElementById("blockMessage");
     if (blockMessage) {
       blockMessage.remove();
-      document.body.style.overflow = ""; // Restore scrolling
+      document.body.style.overflow = "";
     }
   }
 }
-
-// Run the function on page load
 enforceDesktopView();
 
-// Add a resize event listener to check for viewport size changes
 window.addEventListener("resize", enforceDesktopView);
 </script>
-
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -196,8 +189,7 @@ window.addEventListener("resize", enforceDesktopView);
 		          <div class="col-md-12 heading-section ftco-animate">
 		          	<h1 class="big">About Me</h1>
 		            <h2 class="mb-4">About Me</h2>
-		            <p>Hello! I am a freelancer who is currently working as a data specialist. My work involves enriching raw data coming from the client. I use Google Sheets to clean up those data while making sure it is accurate and meets the client’s standards.
-In addition to my data work, I am also a web designer. I enjoy creating designs that are both visually appealing and easy to navigate. I focus on creating clean, user-friendly interfaces that provide a smooth experience for users.</p>
+		            <p>Hello! I am a freelancer specializing in data management and web design. As a Data Specialist, I handle tasks such as enriching and cleaning raw client data using tools like Google Sheets, ensuring accuracy and consistency with client standards. I also work as a Web Designer, currently focusing on building and customizing Shopify stores starting with pre-built themes and heavily modifying them to meet client needs. In addition, I manage Shopify product listings, making sure each item is properly categorized, detailed, and optimized for a smooth shopping experience. My goal is to deliver clean, user-friendly, and visually appealing online stores that engage customers and drive results."</p>
 		            <ul class="about-info mt-4 px-md-0 px-2">
 		            	<li class="d-flex"><span>Name:</span> <span>Joelito Sildura</span></li>
 		            	<li class="d-flex"><span>Email:</span> <span>sildura.joelito.t@gmail.com</span></li>
@@ -206,18 +198,16 @@ In addition to my data work, I am also a web designer. I enjoy creating designs 
 		            </ul>
 		          </div>
 		        </div>
+		        <!----
 	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-
-	          	<!-- Download CV Form --
-                <form method="get" action="resume/resume.pdf" target="_blank" download="Resume">
+                <form method="get" action="#" target="_blank" download="Resume">
                   <div class="form-group">
                     <input type="submit"  value="Preview CV" class="btn py-3 px-4 btn-primary">
                   </div>
 
                 </form>
-
-               -->
 	      	        </div>
+	      	        ---->
         </div>
     	</div>
     </section>
