@@ -34,13 +34,83 @@
       messageDiv.id = "blockMessage";
       messageDiv.style.cssText = `
         display: flex; justify-content: center; align-items: center; 
-        height: 100vh; text-align: center; background-color: #f8f9fa; 
+        height: 100vh; text-align: center; 
+        background: linear-gradient(135deg, #34A853 0%, #2d8f47 100%);
         margin: 0; position: fixed; top: 0; left: 0; width: 100%; z-index: 9999;
+        font-family: 'Poppins', sans-serif;
+        padding: 1rem;
+        box-sizing: border-box;
       `;
       messageDiv.innerHTML = `
-        <div>
-          <h1 style="font-size: 2rem; color: #333;">This webpage is only viewable on devices larger than 898px.</h1>
-          <p style="font-size: 1.2rem; color: #666;">Please resize your browser or switch to a larger device.</p>
+        <div style="
+          background: rgba(255, 255, 255, 0.95);
+          padding: 2.5rem 1.5rem;
+          border-radius: 20px;
+          box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(10px);
+          max-width: 450px;
+          width: 100%;
+          margin: 0 auto;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          box-sizing: border-box;
+        ">
+          <div style="
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #34A853, #2d8f47);
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 20px rgba(52, 168, 83, 0.3);
+          ">
+            <i class="fas fa-desktop" style="font-size: 1.8rem; color: white;"></i>
+          </div>
+          <h1 style="
+            font-size: 1.6rem; 
+            color: #2c3e50; 
+            margin: 0 0 1rem;
+            font-weight: 600;
+            line-height: 1.3;
+          ">Desktop View Required</h1>
+          <p style="
+            font-size: 1rem; 
+            color: #666; 
+            margin: 0 0 1.5rem;
+            line-height: 1.5;
+          ">This webpage is optimized for devices with screen width larger than 898px. Please resize your browser or switch to a larger device for the best experience.</p>
+          <div style="
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+          ">
+            <div style="
+              background: #f8f9fa;
+              padding: 0.75rem 1.5rem;
+              border-radius: 25px;
+              border: 2px solid #e9ecef;
+              font-size: 0.9rem;
+              color: #495057;
+              font-weight: 500;
+            ">
+              <i class="fas fa-expand-arrows-alt" style="margin-right: 0.5rem;"></i>
+              Resize Browser
+            </div>
+            <div style="
+              background: #f8f9fa;
+              padding: 0.75rem 1.5rem;
+              border-radius: 25px;
+              border: 2px solid #e9ecef;
+              font-size: 0.9rem;
+              color: #495057;
+              font-weight: 500;
+            ">
+              <i class="fas fa-laptop" style="margin-right: 0.5rem;"></i>
+              Use Desktop
+            </div>
+          </div>
         </div>
       `;
       document.body.appendChild(messageDiv);
